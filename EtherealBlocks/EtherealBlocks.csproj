@@ -65,9 +65,12 @@
     <None Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="README.MD" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="gamedata\icons\" />
+    <Content Include="before.png" />
+    <Content Include="after.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

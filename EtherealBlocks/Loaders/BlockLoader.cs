@@ -63,12 +63,14 @@ namespace EtherealBlocks
                 InventoryItem originalBlockRequirements = new InventoryItem(block.EtherealBlockIndex, 1);
 
                 Recipe originalToEtherealRecipe = new Recipe(block.EtherealBlockName, etherealBlockRequirements,
-                    new RecipeResult(block.EtherealBlockIndex, 1));
+                    new RecipeResult(block.EtherealBlockIndex, 1), 0, 0, -100);
                 Recipe etherealToOriginalRecipe = new Recipe(block.OriginalBlockName, originalBlockRequirements,
-                    new RecipeResult(block.OriginalBlockIndex, 1));
+                    new RecipeResult(block.OriginalBlockIndex, 1), 0, 0, -100);
 
                 ServerManager.RecipeStorage.AddPlayerRecipe(originalToEtherealRecipe);
                 ServerManager.RecipeStorage.AddPlayerRecipe(etherealToOriginalRecipe);
+                
+                ServerManager.RecipeStorage.AddLimitTypeRecipe("pipliz.crafter", originalToEtherealRecipe);
             }
         }
 

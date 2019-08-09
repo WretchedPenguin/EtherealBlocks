@@ -1,0 +1,13 @@
+﻿[
+  {
+    "dllpath": "EtherealBlocks.dll",
+    "name": "EtherealBlocks",
+    "namepretty": "Ethereal blocks",
+    "version": "0.0.1",
+    "enabled": true,
+    "marksgamemodded": true,
+    "compatibleversions": [
+      "0.7.0"
+    ]
+  }
+]
